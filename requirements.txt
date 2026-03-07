@@ -1,0 +1,11 @@
+langchain
+langchain-groq
+langchain-community
+langchain-tavily
+langgraph
+langchain_core
+python-dotenv
+fastapi
+uvicorn
+pydantic
+streamlit
