@@ -16,7 +16,10 @@ class RequestState(BaseModel):
     messages: List[str]
     allow_search: bool
 
-@app.post("/chat")
+@app.post("/chat", responses={
+    400: {"description": "Invalid model name"},
+    500: {"description": "Failed to get AI response"}
+})
 def chat_endpoint(request: RequestState):
     logger.info(f"Recieved request for model: {request.model_name}")
 

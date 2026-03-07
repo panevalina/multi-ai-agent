@@ -14,7 +14,7 @@ class Settings:
         "llama-70b-8192",
         "llama-8b-8192",
         "whisper-large-v3",
-        "whisper-large-v3-turbo"
+        "whisper-large-v3-turbo",
         "distil-whisper-large-v3-en"
     ]
 
