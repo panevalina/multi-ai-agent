@@ -8,3 +8,4 @@ venv/
 logs/
 .DS_Store
 .vscode/
+custom_jenkins/
