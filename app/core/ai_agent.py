@@ -1,8 +1,12 @@
+from app.config.settings import settings
 from langchain_groq import ChatGroq
 from langchain_tavily import TavilySearch
 from langgraph.prebuilt import create_react_agent 
 from langchain_core.messages import AIMessage, HumanMessage
+from langsmith import traceable
+import os
 
+@traceable
 def get_response_from_ai_agent(llm_id, query, allow_search, system_prompt):
 
     llm = ChatGroq(model=llm_id)

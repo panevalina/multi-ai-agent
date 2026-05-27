@@ -14,7 +14,7 @@ HOST = os.getenv("HOST")
 def run_backend():
     try:
         logger.info("starting backend service..")
-        subprocess.run(["uvicorn", "app.backend.api:app", "--host", HOST, "--port", 8000], check=True)
+        subprocess.run(["uvicorn", "app.backend.api:app", "--host", HOST, "--port", "8000"], check=True)    
     except Exception as e:
         logger.error("Problem with backend service")
         raise CustomException("Failed to start backend" , e)
