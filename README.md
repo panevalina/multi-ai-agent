@@ -13,6 +13,7 @@ A full-stack AI agent application that allows users to interact with multiple LL
 - **Containerization:** Docker
 - **CI/CD:** Jenkins
 - **Code Quality:** SonarQube
+- **Observability:** LangSmith
 
 ---
 
@@ -103,11 +104,6 @@ docker run -p 8000:8000 -p 8501:8501 --env-file .env multi-ai-agent
 - `llama-3.3-70b-versatile`
 - `llama-3.1-8b-instant`
 - `llama-70b-8192`
-- `llama-8b-8192`
-- `whisper-large-v3`
-- `whisper-large-v3-turbo`
-- `distil-whisper-large-v3-en`
-
 ---
 
 ## API
@@ -156,7 +152,8 @@ The `Jenkinsfile` defines the following stages:
 | `TAVILY_API_KEY` | API key from [Tavily](https://tavily.com) |
 | `HOST` | Backend host (default: `127.0.0.1`) |
 | `API_URL` | Full backend URL (default: `http://127.0.0.1:8000/`) |
-
+| `LANGCHAIN_API_KEY` | API key from [LangSmith](https://smith.langchain.com) |
+| `LANGCHAIN_PROJECT` | LangSmith project name (default: `multi-ai-agent`) |
 ---
 
 ## Author
