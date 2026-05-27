@@ -1,6 +1,6 @@
 # Multi AI Agent
 
-A full-stack AI agent application that allows users to interact with multiple LLM models via a Streamlit frontend and a FastAPI backend. Supports optional web search via Tavily and is containerized with Docker, analyzed with SonarQube, and built/deployed via a Jenkins CI/CD pipeline.
+A full-stack AI agent application that allows users to interact with multiple LLM models via a Streamlit frontend and a FastAPI backend. Supports optional web search via Tavily, agent run observability via LangSmith and is containerized with Docker, analyzed with SonarQube, and built via a Jenkins CI/CD pipeline.
 
 ---
 
